@@ -1,6 +1,6 @@
 
-Task 1: Load and Explore the Dataset
-We’ll load the Iris dataset using sklearn, display the first few rows, inspect the data types, and handle missing values.
+# Task 1: Load and Explore the Dataset
+# We’ll load the Iris dataset using sklearn, display the first few rows, inspect the data types, and handle missing values.
 
 import pandas as pd
 from sklearn.datasets import load_iris
@@ -22,15 +22,15 @@ print(df.isnull().sum())  # Check for missing values
 # Clean the dataset by dropping rows with missing values (if any)
 df_cleaned = df.dropna()
 
-# Alternatively, you can fill missing values (if necessary) using df.fillna(value)
-Explanation:
-Loading the dataset: The load_iris() function loads the Iris dataset, which is already split into features (iris.data) and labels (iris.target). We combine them into a DataFrame.
-Displaying the data: df.head() shows the first 5 rows of the dataset.
-Checking for missing values: df.isnull().sum() helps to check if there are any missing values in the dataset.
+# # Alternatively, you can fill missing values (if necessary) using df.fillna(value)
+# Explanation:
+# Loading the dataset: The load_iris() function loads the Iris dataset, which is already split into features (iris.data) and labels (iris.target). We combine them into a DataFrame.
+# Displaying the data: df.head() shows the first 5 rows of the dataset.
+# Checking for missing values: df.isnull().sum() helps to check if there are any missing values in the dataset.
 
-Task 2: Basic Data Analysis
-In this step, we compute basic statistics and perform group-based analysis.
-# Compute basic statistics of the numerical columns
+# Task 2: Basic Data Analysis
+# In this step, we compute basic statistics and perform group-based analysis.
+# # Compute basic statistics of the numerical columns
 print(df.describe())
 
 # Perform grouping by the 'species' column and compute the mean of numerical columns
@@ -41,8 +41,8 @@ print(grouped)
 max_sepal_length_species = grouped['sepal length (cm)'].idxmax()
 print(f"Species with highest average sepal length: {max_sepal_length_species}")
 
-#Task 3: Data Visualization
-Now, we’ll create four types of visualizations: a line chart, bar chart, histogram, and scatter plot. We will use matplotlib and seaborn for this task.
+# #Task 3: Data Visualization
+# Now, we’ll create four types of visualizations: a line chart, bar chart, histogram, and scatter plot. We will use matplotlib and seaborn for this task.
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -84,13 +84,13 @@ plt.ylabel('Petal Length (cm)')
 plt.legend(title='Species')
 plt.show()
 
-#Explanation:
-#Line Chart: We plot the sepal length across all records to visualize any trend. The X-axis represents the index, and the Y-axis represents sepal length.
-Bar Chart: We show the average petal length per species using a barplot.
-Histogram: A histogram of the sepal length column to visualize its distribution.
-Scatter Plot: A scatter plot to visualize the relationship between sepal length and petal length, with color coding by species.
-Error Handling
-To handle potential errors during the data reading or processing steps, you can use a try-except block.
+# #Explanation:
+# #Line Chart: We plot the sepal length across all records to visualize any trend. The X-axis represents the index, and the Y-axis represents sepal length.
+# Bar Chart: We show the average petal length per species using a barplot.
+# Histogram: A histogram of the sepal length column to visualize its distribution.
+# Scatter Plot: A scatter plot to visualize the relationship between sepal length and petal length, with color coding by species.
+# Error Handling
+# To handle potential errors during the data reading or processing steps, you can use a try-except block.
 
 try:
     # Load the dataset
@@ -101,14 +101,14 @@ except pd.errors.EmptyDataError:
     print("No data in the file. Please check the file contents.")
 except Exception as e:
     print(f"An error occurred: {e}")
-This will ensure that your program can handle common issues like missing files or incorrect data.
+# This will ensure that your program can handle common issues like missing files or incorrect data.
 
-Summary of Steps:
-Task 1: We loaded the dataset, explored its structure, and handled missing values.
-Task 2: We performed basic statistics and grouped the data by a categorical feature to identify patterns.
-Task 3: We created four visualizations to analyze the dataset in a more graphical format.
-Error Handling: We used try-except to handle common file reading errors.
-With this approach, you’ve completed the tasks of loading, cleaning, analyzing, and visualizing data in Python using pandas, matplotlib, and seaborn!
+# Summary of Steps:
+# Task 1: We loaded the dataset, explored its structure, and handled missing values.
+# Task 2: We performed basic statistics and grouped the data by a categorical feature to identify patterns.
+# Task 3: We created four visualizations to analyze the dataset in a more graphical format.
+# Error Handling: We used try-except to handle common file reading errors.
+# With this approach, you’ve completed the tasks of loading, cleaning, analyzing, and visualizing data in Python using pandas, matplotlib, and seaborn!
 
 
 
