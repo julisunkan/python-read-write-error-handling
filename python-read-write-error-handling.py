@@ -1,8 +1,8 @@
-//File Read & Write Challenge 🖋️: Create a program that reads a file and writes a modified version to a new file.
-//The program will:
-//Read the content of an existing file.
-//Modify the content (e.g., convert all text to uppercase).
-//Write the modified content to a new file.
+# //File Read & Write Challenge 🖋️: Create a program that reads a file and writes a modified version to a new file.
+# //The program will:
+# //Read the content of an existing file.
+# //Modify the content (e.g., convert all text to uppercase).
+# //Write the modified content to a new file.
 
 # File Read & Write Challenge
 
@@ -30,11 +30,11 @@ def modify_file_content(input_file, output_file):
 modify_file_content("input.txt", "output.txt")
 
 
-//Error Handling Lab 🧪: Ask the user for a filename and handle errors if it doesn’t exist or can’t be read.
-//This program will:
-//Prompt the user for a filename.
-//Try to open and read the file.
-//Handle errors if the file doesn’t exist or can’t be read.
+# //Error Handling Lab 🧪: Ask the user for a filename and handle errors if it doesn’t exist or can’t be read.
+# //This program will:
+# //Prompt the user for a filename.
+# //Try to open and read the file.
+# //Handle errors if the file doesn’t exist or can’t be read.
 
 # Error Handling Lab
 
